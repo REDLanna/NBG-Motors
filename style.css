@@ -1,27 +1,89 @@
-body{background-color: rgb(58, 45, 239);}
-h1{font-style: italic;}
-h1{color: rgb(45, 58, 239);}
-h1{background-color: black;}
-h1{font-size: 60px;}
-h1{text-align: center;}
-h1{border:  5px solid blue;}
-h2{color: black;}
-h2{font-size: 40px;}
-h2{text-align: left;}
-h2{font-style: italic;}
-h3{color: black;}
-h3{font-size: 40px;}
-h4{color: black;}
-h4{font-size: 40px;}
-h5{color: black;}
-h5{font-size: 40px;}
-h6{color: black;}
-h6{font-size: 40px;}
-pre{font-size: 18px;}
-pre{font-style: italic;}
-pre{color: white}
-p{font-size: 18px;}
-p{font-style: italic;}
+<!-->
+body{
+background-color: rgb(58, 45, 239);
+}
+h1{
+font-style: italic;
+color: rgb(45, 58, 239)
+background-color: black;
+font-size: 60px;
+text-align: center;
+border:  5px solid blue;
+}
+
+h2{
+color: black;
+font-size: 40px;
+text-align: left;
+font-style: italic;
+}
+h3{
+color: black;
+font-size: 40px;
+}
+h4{
+color: black;
+font-size: 40px;
+}
+h5{color: black;
+font-size: 40px;
+}
+h6{color: black;
+font-size: 40px;
+}
+pre{font-size: 18px;
+font-style: italic;
+color: white
+}
+p{font-size: 18px;
+font-style: italic;
+}
 .table{color: aliceblue;}
 h7{color: white;}
 h7{font-size: 40px;}
+h7{color: white;
+font-size: 40px;}
+<!--> Video
+
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+<!--> Video
