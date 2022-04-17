@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+.header-container{
+  background-color: #081E37;
+  width: 100%;
+
+}
+.header-container nav {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-container nav ul li {
+    list-style: none;
+    padding: 14px 16px;
+
+}
+.header-container nav ul li:hover {
+    background-color: #3e3e3e;
+
+}
+.header-container nav ul li a{
+  font: 500 16px;
+  color: #ffffff;
+  
+  
+  text-decoration: none;
+
+}
+.containerzada {
+    width: 100%;
+}
+.section-presentation{
+    margin:0 auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+.section-presentation img{
+    width: 100%;    
+}
+
+.section-presentation h1{
+    color: #081E37;
+}
+.section-presentation .description{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-presentation .description h1{
+    font-size: 40px;
+}
+
+.section-presentation .description .p-description p{
+    max-width: 900px;
+    padding:50px 40px;
+    color: #000000;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.section-presentation .description h1{
+    font-size: 40px;
+}
+ #gambiarra {
+    padding: 20px 30px 0 30px;
+    background-color: #111111;
+}
+
+
+.section-cars {
+
+    padding: 20px 0 0 0;
+    width: 100%;
+    height: auto;
+}
+.cars-deteils{
+    padding: 50px 0 20px 0;
+}
+
+.row{
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.column {
+    padding:10px;
+
+}   
+  
+  
+  /* Style the images inside the grid */
+  .column img {
+    width: 290px;
+    height: 240px;
+    object-fit: cover;
+    opacity: 0.8; 
+    cursor: pointer; 
+    transition: all .2s linear;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+.discription-cars{
+    background-color: #f1f1f1;
+    color: #111111;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+    max-width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.discription-cars p {
+    text-indent: 6ch;
+    line-height: 1.8;
+    text-align: justify;
+    color: #111111;
+
+}
+.table-container{
+    
+    width: 100%;
+}
+
+.table-container h1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.table-container table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .table-container    table  th, td {
+                  padding: 10px;
+                  text-align: left;
+                  border-bottom: 1px solid #ddd;
+              }
+          .table-container     tr:hover {opacity: 0.8;
+              cursor: pointer;}
+             
+              .table-container     table  ul {
+                   list-style-type: none;
+                   margin: 0;
+                  padding: 0;
+                   overflow: hidden;
+                   background-color: #f1f1f1;
+              }
+  
+              .table-container     table  li {
+                   float: left;
+              }
+  
+              .table-container    table  li a {
+                   display: block;
+                   color: #f3f3f3;
+                   text-align: center;
+                   padding: 14px 16px;
+                   text-decoration: none;
+              }
+  
+              .table-container       table li a:hover {
+                   background-color: #111;
+              }   
+              .table-container       #grad{
+                  
+                  background-color: #111;
+              }
+              .table-container   td,th,thead,table,tbody{
+                  color:#f3f3f3;
+                  border: 1px solid gray;
+              }
+              
+              .table-container  #grad1{
+                  background-color:#ffffff;
+                  
+              }
+
+
+    footer {
+        padding: 20px 20px;
+        color: #111111;
+    }
+
+    footer p {
+        margin: 0 auto;
+        max-width: 1200px;
+        font-size: 12px;
+    }
