@@ -1,529 +1,534 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <script>
-            function jeep(imgs) {
-              var expandImg = document.getElementById("expandedImg");
-              var imgText = document.getElementById("imgtext");
-              expandImg.src = imgs.src;
-              imgText.innerHTML = imgs.alt;
-              expandImg.parentElement.style.display = "block";
-            }
 
-            function camaro(imgs) {
-              var expandImg = document.getElementById("expandedImg2");
-              var imgText = document.getElementById("imgtext2");
-              expandImg.src = imgs.src;
-              imgText.innerHTML = imgs.alt;
-              expandImg.parentElement.style.display = "block";
-            }
-            
-            function supra(imgs) {
-              var expandImg = document.getElementById("expandedImg3");
-              var imgText = document.getElementById("imgtext3");
-              expandImg.src = imgs.src;
-              imgText.innerHTML = imgs.alt;
-              expandImg.parentElement.style.display = "block";
-            }
-           
-            function velar(imgs) {
-              var expandImg = document.getElementById("expandedImg4");
-              var imgText = document.getElementById("imgtext4");
-              expandImg.src = imgs.src;
-              imgText.innerHTML = imgs.alt;
-              expandImg.parentElement.style.display = "block";
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles/modal.css">
+    <title>Document</title>
+</head>
 
-            function r35(imgs) {
-              var expandImg = document.getElementById("expandedImg5");
-              var imgText = document.getElementById("imgtext5");
-              expandImg.src = imgs.src;
-              imgText.innerHTML = imgs.alt;
-              expandImg.parentElement.style.display = "block";
-            }
+<body>
 
-           </script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-        <src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-        <style>
-           
-           * {
-  box-sizing: border-box;
-}
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Notícias</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Contate-nos</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+            </nav>
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
+        </div>
+    </header>
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
+    <main class="containerzada">
+        <section class="section-presentation">
 
-.column img:hover {
-  opacity: 1;
-}
+            <h1>New Bridge Motors</h1>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMWpEeEsJ3MQXE3pIxkwrn7bg2FhWLXzR1-iCc2=w1080-h608-p-no-v0"
+                alt="blue-car">
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+            <div class="description">
+                <h1>
+                    Conheça as novas linhas de carros da New Bridge Motors!
 
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
+                </h1>
 
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
+                <div class="p-description">
+                    <p>
+                        Por mais que acabamos de inaugurar nossa concessionária, não significa que teremos poucas
+                        opções! Muito pelo contrário! Já está disponível
+                        vários modelos de carros, como: Sedã, SUV, Hatchback, coupé, conversível e entre vários outros.
+                        Vamos ver quais são as novidades?
 
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-           table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-            th, td {
-                padding: 8px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-            tr:hover {background-color: blue;}
-           
-            ul {
-                 list-style-type: none;
-                 margin: 0;
-                padding: 0;
-                 overflow: hidden;
-                 background-color: #081E37;
-            }
-
-            li {
-                 float: left;
-            }
-
-            li a {
-                 display: block;
-                 color: white;
-                 text-align: center;
-                 padding: 14px 16px;
-                 text-decoration: none;
-            }
-
-            li a:hover {
-                 background-color: #111;
-            }   
-            #grad{
-                background-color:#ffffff;
-                background-image: linear-gradient(180deg, rgb(62, 72, 207), rgb(0, 0, 0));
-            }td,th,thead,table,tbody{
-                color:#ffffff;
-                border: 2px solid white;
-            }#grad1{
-                background-color:#ffffff;
-                background-image: linear-gradient(180deg, rgb(0,0,0), rgb(62, 72, 207));
-            }
-        </style>
-        <title>
-
-            New Bridge Motors
-        </title>
-            <link rel="stylesheet" href="Estilo.css">
-    </head>
-        <body>
-            
-            <ul>
-                
-                <li><a class="active" href="nbg2.html.html">Home</a></li>
-                <li><a href="#news">Notícias</a></li>
-                <li><a href="#contact">Contate-nos</a></li>
-                <li><a href="#about">Sobre</a></li>
-              </ul>
-            <font color="white">
-
-                <div id="grad">
-                    <h1>
-
-                        New Bridge Motors
-                    </h1>
-                    <center>
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipMWpEeEsJ3MQXE3pIxkwrn7bg2FhWLXzR1-iCc2=w1080-h608-p-no-v0" class="img-fluid"  >
-                    </center>
+                    </p>
                 </div>
-                <div style="background-color: black;" style="margin: auto;">
 
-             
-            <h2>
+            </div>
+        </section>
 
-                Conheça as novas linhas de carros da New Bridge Motors!
+        <div id="gambiarra">
+            <section class="section-cars">
 
-            </h2>
-                <pre>
 
-                   Por mais que acabamos de inaugurar nossa concessionária, não significa que teremos poucas opções! Muito pelo contrário! Já está disponível
-                   vários modelos de carros, como: Sedã, SUV, Hatchback, coupé, conversível e entre vários outros. Vamos ver quais são as novidades?
-
-                </pre>
-            
-            <h4>
-                Jeep Renegade Longitude
-            </h4>
-            <div style="text-align: center;">
-    
-                </div>
-                <div style="text-align:center">
+                <div class="cars-deteils" style="text-align:center">
                     <h2>Jeep Renegade</h2>
                     <p>Os detalhes do novo Jeep Renegade Trailhawk:</p>
-                  </div>
-                  
-                  <!-- The four columns -->
-                  <div class="row">
+                </div>
+
+                <!-- The four columns -->
+                <div class="row">
                     <div class="column">
-                      <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-45-campo@3x.jpg"  style="width:100%" onclick="jeep(this);">
+                        <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-45-campo@3x.jpg"
+                            onclick="jeep(this);">
                     </div>
                     <div class="column">
-                      <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-traseira-praia@3x.jpg"  style="width:100%" onclick="jeep(this);">
+                        <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-traseira-praia@3x.jpg"
+                            onclick="jeep(this);">
                     </div>
                     <div class="column">
-                      <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-frente-campo@3x.jpg"  style="width:100%" onclick="jeep(this);">
+                        <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-frente-campo@3x.jpg"
+                            onclick="jeep(this);">
                     </div>
                     <div class="column">
-                      <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-45-estrada@3x.jpg"  style="width:100%" onclick="jeep(this);">
+                        <img src="https://renegade.jeep.com.br/images/Gallery/trailhawk/jeep-renegade-tailhawk-45-estrada@3x.jpg"
+                            onclick="jeep(this);">
                     </div>
-                  </div>
-                  
-                  <div class="container">
+                </div>
+
+                <div class="container">
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                    <img id="expandedImg" style="width:100%">
+                    
+                    
+                    <img id="expandedImg" class="img-cars">
                     <div id="imgtext"></div>
-                  </div>
-                <pre>
+                </div>
+
+                <div class="discription-cars">
+
+                    <p>
+
+                        Origem
+
+                        O Renegade é um SUV compacto, produzido pela Jeep, bandeira da FCA, lançado em 2014.
+                        É fabricado em Melfi (na Itália) e também em Rüsselsheim( na Alemanha), tendo sua produção
+                        começado em março de 2015.
+
+                        Estilo de um "Renegado"
+
+                        Sua plataforma, frame, tração, suspensão proveio do projeto do Fiat 500X e o Renegade foi
+                        apresentado ao público, pela primeira vez, no Salão de Genebra, no início de 2014.
+                        É o primeiro Jeep produzido na Itália e traz diversas referências estéticas aos antigos Jeep
+                        militares.
+                        Oferece uma gama diversificada de motores, com propulsores Diesel, Flex e Gasolina, todos com
+                        quatro cilindros em linha.
+                        Há opção de transmissão manual, automatizada e automática, esta última com nove marchas.
+
+
+                    </p>
+                </div>
+
+            </section>
+            <section class="section-cars">
+
                 
-                Origem
 
-                O Renegade é um SUV compacto, produzido pela Jeep, bandeira da FCA, lançado em 2014. 
-                É fabricado em Melfi (na Itália) e também em Rüsselsheim( na Alemanha), tendo sua produção começado em março de 2015.
-
-                Estilo de um "Renegado"
-
-                Sua plataforma, frame, tração, suspensão proveio do projeto do Fiat 500X e o Renegade foi apresentado ao público, pela primeira vez, no Salão de Genebra, no início de 2014. 
-                É o primeiro Jeep produzido na Itália e traz diversas referências estéticas aos antigos Jeep militares.
-                Oferece uma gama diversificada de motores, com propulsores Diesel, Flex e Gasolina, todos com quatro cilindros em linha. 
-                Há opção de transmissão manual, automatizada e automática, esta última com nove marchas.
-                
-                
-                </pre>
-            <div style="text-align:center">
-                <h2>Chevrolet Camaro</h2>
-                <p>Os detalhes do novo Chevrolet Camaro 2022:</p>
-              </div>
-             <!-- The four columns -->
-             <div class="row">
-                <div class="column">
-                  <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/02-images/exterior-09.jpg"  style="width:100%" onclick="camaro(this);">
+                <div class="cars-deteils" style="text-align:center">
+                    <h2>Chevrolet Camaro</h2>
+                    <p>Os detalhes do novo Chevrolet Camaro 2022:</p>
                 </div>
-                <div class="column">
-                  <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/02-images/exterior-2.jpg?"  style="width:100%" onclick="camaro(this);">
+                <!-- The four columns -->
+                <div class="row">
+                    <div class="column">
+                        <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/02-images/exterior-09.jpg"
+                            onclick="camaro(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/02-images/exterior-2.jpg?"
+                            onclick="camaro(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/01-images/exterior-05.jpg"
+                            onclick="camaro(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/interior/interior-02.jpg"
+                            onclick="camaro(this);">
+                    </div>
                 </div>
-                <div class="column">
-                  <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/exterior/01-images/exterior-05.jpg"  style="width:100%" onclick="camaro(this);">
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg2" class="img-cars" >
+                    <div id="imgtext2"></div>
                 </div>
-                <div class="column">
-                  <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/performance/2020-camaro/gallery/interior/interior-02.jpg"  style="width:100%" onclick="camaro(this);">
+
+
+                <div class="discription-cars">
+
+
+                    <p>
+
+                        A lenda das pistas
+
+                        O Camaro é um coupé esportivo de porte médio da Chevrolet. Produzido desde 1966, trata-se de
+                        muscle car que seria a resposta da General Motors ao Ford Mustang, de 1964.
+                        Sua produção foi interrompida em 2002, mas a General Motors retomou a produção de uma nova
+                        versão em 2009.
+
+                        História
+
+                        A década de 1970 não foi proveitosa para o Camaro: a subida do preço do petróleo fez o
+                        consumidor optar por veículos que consumiam menos.
+                        Medidas antipoluição fizeram acabar com os grandes V8 e em 1972 o fim da produção do SS e em
+                        1973 o surgimento do Camaro LT privilegiando mais o luxo e o conforto e menos a potência, dando
+                        lugar inclusive aos motores 6 cilindros em linha, menos potentes e mais econômicos.
+                        A crise faz outra "vítima" em 74, terminando com o Z28.
+                        Em 11 de Maio de 1978, o Camaro de número 2 saiu da fábrica de Van Nuys, Califórnia.
+                        E no ano de 1982, entra em campo, uma nova versão do Camaro chamada IROC-Z (Internacional Racing
+                        of Champions) essa versão foi até 1990 quando acabou a produção, a terceira geração do Camaro,
+                        com a maiores modificações estéticas após 12 anos.
+                        Com seu design quase futurista é escolhido pela terceira vez como Pace Car oficial das 500
+                        milhas de Indianápolis 500.
+                        Mecanicamente também grandes novidades ficaram por conta do novo motor inteiramente em alumínio,
+                        mais uma vez derivado do mesmo que equipava o Corvette. Tratava-se de um V8 de 5.7 litros que no
+                        Z28 produzia 305 cavalos e 320 no SS.
+                        Novos freios a disco com assistência por ABS Bosch nas quatro rodas. Nenhuma mudança
+                        significativa aconteceu até 1998.
+
+                        Sexta-geração
+
+                        O Camaro ZL1 é um chevrolet com motor V8 Supercharger e com fama.
+                        O Camaro ZL1 aparece em alguns jogos da coleção Need for Speed, e foi o carro em que a
+                        personagem Bumblebee do filme Revenge of the Fallen da saga Transformers se transformava.
+                        O Camaro ZL1 chega aos 290 Km/h de velocidade máxima.
+
+                    </p>
                 </div>
-              </div>
 
-              <pre>
-               
-                A lenda das pistas
-                
-                O Camaro é um coupé esportivo de porte médio da Chevrolet. Produzido desde 1966, trata-se de muscle car que seria a resposta da General Motors ao Ford Mustang, de 1964. 
-                Sua produção foi interrompida em 2002, mas a General Motors retomou a produção de uma nova versão em 2009.
+            </section>
 
-                História
 
-                A década de 1970 não foi proveitosa para o Camaro: a subida do preço do petróleo fez o consumidor optar por veículos que consumiam menos. 
-                Medidas antipoluição fizeram acabar com os grandes V8 e em 1972 o fim da produção do SS e em 1973 o surgimento do Camaro LT privilegiando mais o luxo e o conforto e menos a potência, dando lugar inclusive aos motores 6 cilindros em linha, menos potentes e mais econômicos. 
-                A crise faz outra "vítima" em 74, terminando com o Z28.
-                Em 11 de Maio de 1978, o Camaro de número 2 saiu da fábrica de Van Nuys, Califórnia. 
-                E no ano de 1982, entra em campo, uma nova versão do Camaro chamada IROC-Z (Internacional Racing of Champions) essa versão foi até 1990 quando acabou a produção, a terceira geração do Camaro, com a maiores modificações estéticas após 12 anos. 
-                Com seu design quase futurista é escolhido pela terceira vez como Pace Car oficial das 500 milhas de Indianápolis 500.
-                Mecanicamente também grandes novidades ficaram por conta do novo motor inteiramente em alumínio, mais uma vez derivado do mesmo que equipava o Corvette. Tratava-se de um V8 de 5.7 litros que no Z28 produzia 305 cavalos e 320 no SS. 
-                Novos freios a disco com assistência por ABS Bosch nas quatro rodas. Nenhuma mudança significativa aconteceu até 1998.
 
-                Sexta-geração
 
-                O Camaro ZL1 é um chevrolet com motor V8 Supercharger e com fama. 
-                O Camaro ZL1 aparece em alguns jogos da coleção Need for Speed, e foi o carro em que a personagem Bumblebee do filme Revenge of the Fallen da saga Transformers se transformava. 
-                O Camaro ZL1 chega aos 290 Km/h de velocidade máxima.
-                
-              </pre>
-              
-              <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg2" style="width:100%">
-                <div id="imgtext2"></div>
-              </div>
-           
-              
-              
-              <div style="text-align:center">
-                <h2>Toyota Supra MKIV</h2>
-                <p>Confira os detalhes do clássico Supra MKIV(1995):</p>
-              </div>
-              
-              <!-- The four columns -->
-              <div class="row">
-                <div class="column">
-                  <img src="https://images-automais.autosport.pt/2021/07/supra-7k-07.jpg"  style="width:100%" onclick="supra(this);">
+
+            <section class="section-cars">
+
+                <div class="cars-deteils" style="text-align:center">
+                    <h2>Toyota Supra MKIV</h2>
+                    <p>Confira os detalhes do clássico Supra MKIV(1995):</p>
                 </div>
-                <div class="column">
-                  <img src="https://images-automais.autosport.pt/2021/07/supra-7k-03.jpg"  style="width:100%" onclick="supra(this);">
+
+                <!-- The four columns -->
+
+
+                <div class="row">
+                    <div class="column">
+                        <img src="https://images-automais.autosport.pt/2021/07/supra-7k-07.jpg" onclick="supra(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images-automais.autosport.pt/2021/07/supra-7k-03.jpg" onclick="supra(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images-automais.autosport.pt/2021/07/supra-7k-02.jpg" onclick="supra(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://images-automais.autosport.pt/2021/07/supra-7k-01.jpg" onclick="supra(this);">
+                    </div>
                 </div>
-                <div class="column">
-                  <img src="https://images-automais.autosport.pt/2021/07/supra-7k-02.jpg"  style="width:100%" onclick="supra(this);">
+
+
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg3" class="img-cars" >
+                    <div id="imgtext3"></div>
                 </div>
-                <div class="column">
-                  <img src="https://images-automais.autosport.pt/2021/07/supra-7k-01.jpg"  style="width:100%" onclick="supra(this);">
+
+                <div class="discription-cars">
+
+                    <h2>História</h2>
+
+
+                    <p>
+                        O Toyota Supra (em japonês: トヨタ・スープラ, Hepburn: Toyota Sūpura) é um automóvel desportivo
+                        produzido pela fabricante japonesa Toyota entre 1978 e 2002, e desde 2019 até o presente.
+                        O nome "Supra" é derivado do prefixo latino, que significa "acima", "ultrapassar" ou "ir além".
+                        O Supra possui linhas agressivas e um aerofólio para gerar sustentação negativa e dar mais
+                        esportividade ao design do carro.
+                        O Supra é equipado com muita tecnologia, dispõe de controle de tração e uma excelente capacidade
+                        de frenagem.
+
+
+                    </p>
+                    <h2>Quarta geração(A80 - 1993-2002)</h2>
+
+                    <p>
+                        Foi apenas em 1993 que a quarta geração do Supra foi lançada. Neste modelo os faróis
+                        escamoteáveis foram removidos e o carro ganhou uma carroçaria muito mais resistente e mais
+                        arredondada que as anteriores.
+                        A redução de peso foi extremamente importante para este modelo, perdendo quase 60 kg (132 lb) em
+                        relação à geração anterior, graças ao uso de alumínio no capô, no teto e nos suportes dos
+                        pára-choques.
+                        Com esta geração vem mais tecnologia e mais novidades para os afoitos apaixonados pelo carro.
+                        Desta vez duas opções de motorização, sendo uma de 6 cilindros (2JZ-GE),
+                        3.0 litros e 24 válvulas com duplo comando no cabeçote e com controle variável de abertura das
+                        válvulas, responsável por 220 cavalos de potência, e outra (2JZ-GTE) com as mesmas
+                        características,
+                        porém com dois turbos sequenciados que rendiam até 325 cavalos de potência.
+                        Equipado com câmbio manual de 6 velocidades Getrag, o Supra biturbo exportado para os países que
+                        não fazem exigência do limitador eletrônico de velocidade,
+                        alcança 250 km/h (com o limitador eletrônico chega a 180 km/h) e acelera de 0-100 km/h em 5,3
+                        segundos.
+                        Porém nos diversos países europeus e mesmo nos EUA - um grande mercado para o Supra - as
+                        regulamentações de emissão de poluentes,
+                        impuseram restrições a carros como ele e alguns de seus concorrentes, fazendo com que em 1999
+                        suas vendas fossem encerradas.
+                        A produção continuou no Japão até agosto de 2002, cessando devido a padrões de emissão
+                        restritivos.
+                    </p>
+
                 </div>
-              </div>
-              
-              <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg3" style="width:100%">
-                <div id="imgtext3"></div>
-              </div>
-            <pre>
-                 
-                <h7>História</h7>
 
-                O Toyota Supra (em japonês: トヨタ・スープラ, Hepburn: Toyota Sūpura) é um automóvel desportivo produzido pela fabricante japonesa Toyota entre 1978 e 2002, e desde 2019 até o presente. 
-                O nome "Supra" é derivado do prefixo latino, que significa "acima", "ultrapassar" ou "ir além".
-                O Supra possui linhas agressivas e um aerofólio para gerar sustentação negativa e dar mais esportividade ao design do carro. 
-                O Supra é equipado com muita tecnologia, dispõe de controle de tração e uma excelente capacidade de frenagem.
-                  
-                <h7>Quarta geração(A80 - 1993-2002)</h7>
+            </section>
+            <section class="section-cars">
 
-                Foi apenas em 1993 que a quarta geração do Supra foi lançada. Neste modelo os faróis escamoteáveis foram removidos e o carro ganhou uma carroçaria muito mais resistente e mais arredondada que as anteriores. 
-                A redução de peso foi extremamente importante para este modelo, perdendo quase 60 kg (132 lb) em relação à geração anterior, graças ao uso de alumínio no capô, no teto e nos suportes dos pára-choques. 
-                Com esta geração vem mais tecnologia e mais novidades para os afoitos apaixonados pelo carro. 
-                Desta vez duas opções de motorização, sendo uma de 6 cilindros (2JZ-GE), 
-                3.0 litros e 24 válvulas com duplo comando no cabeçote e com controle variável de abertura das válvulas, responsável por 220 cavalos de potência, e outra (2JZ-GTE) com as mesmas características, 
-                porém com dois turbos sequenciados que rendiam até 325 cavalos de potência.
-                Equipado com câmbio manual de 6 velocidades Getrag, o Supra biturbo exportado para os países que não fazem exigência do limitador eletrônico de velocidade, 
-                alcança 250 km/h (com o limitador eletrônico chega a 180 km/h) e acelera de 0-100 km/h em 5,3 segundos. 
-                Porém nos diversos países europeus e mesmo nos EUA - um grande mercado para o Supra - as regulamentações de emissão de poluentes, 
-                impuseram restrições a carros como ele e alguns de seus concorrentes, fazendo com que em 1999 suas vendas fossem encerradas. 
-                A produção continuou no Japão até agosto de 2002, cessando devido a padrões de emissão restritivos.
-            
-            </pre>
-                      
-            <div style="text-align:center">
-                <h2>Land Rover Range Rover Velar</h2>
-                <p>
-                    O Range Rover Avant Garde:</p>
-              </div>
-
-            <!-- The four columns -->
-            <div class="row">
-                <div class="column">
-                  <img src="https://esbrasil.com.br/wp-content/uploads/2018/04/velar.png"  style="width:100%" onclick="velar(this);">
+                <div class="cars-deteils" style="text-align:center">
+                    <h2>Land Rover Range Rover Velar</h2>
+                    <p>
+                        O Range Rover Avant Garde:</p>
                 </div>
-                <div class="column">
-                  <img src="https://www.comprecar.com.br/storage/news/featured/cF4WYIGSC_6guYm.jpg"  style="width:100%" onclick="velar(this);">
+
+                <!-- The four columns -->
+                <div class="row">
+                    <div class="column">
+                        <img src="https://esbrasil.com.br/wp-content/uploads/2018/04/velar.png" onclick="velar(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://www.comprecar.com.br/storage/news/featured/cF4WYIGSC_6guYm.jpg"
+                            onclick="velar(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://cdn-jaguarlandrover.com/api/v1/image/23962/w/680.jpg?" onclick="velar(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://carroenoticias.com/wp-content/uploads/2022/03/Peugeot-e208-GT-2022-03-13T205147.643.png"
+                            onclick="velar(this);">
+                    </div>
                 </div>
-                <div class="column">
-                  <img src="https://cdn-jaguarlandrover.com/api/v1/image/23962/w/680.jpg?"  style="width:100%" onclick="velar(this);">
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg4" class="img-cars" >
+                    <div id="imgtext4"></div>
                 </div>
-                <div class="column">
-                  <img src="https://carroenoticias.com/wp-content/uploads/2022/03/Peugeot-e208-GT-2022-03-13T205147.643.png"  style="width:100%" onclick="velar(this);">
+
+                <div class="discription-cars">
+                    <p>
+
+                        História
+
+                        O Range Rover é um sofisticado utilitário desportivo de alto-luxo fabricado na Inglaterra pela
+                        tradicional Land Rover, que foi adquirida em 2008 pela Tata Motors.
+                        Este requintado utilitário desportivo impressiona pelas suas dimensões externas, pelo conforto e
+                        pela alta tecnologia embarcada,
+                        que chega ao ponto extremo de oferecer ao seu condutor a opção de escolher uma programação de
+                        ajuste da suspensão para rodar com mais suavidade (absorvendo o máximo possível as
+                        irregularidades das vias) ou para rodar mais firme,
+                        mais baixa para viajar por autoestradas pavimentadas bem conservadas ou mais alta para dirigir
+                        cuidadosamente em estradas rurais.
+
+                        Há mais de 60 anos, a fabricante inglesa Land Rover produz alguns dos mais respeitáveis e
+                        robustos utilitários esportivos de tração 4X4 integral do mundo.
+                        Esta tecnologia 4X4 foi mantida e aprimorada no Range Rover, mas desta vez combinada com a
+                        introdução do moderno conceito monobloco na carroceria, que absorve melhor impactos em acidentes
+                        graves.
+                        Por se tratar de um automóvel pesado, na década de 2.000 a Land Rover disponibilizou no Brasil
+                        duas opções de motorização diesel aos seus clientes,
+                        a primeira um motor turbo-diesel V6 com 2.700 cm3 de cilindrada, a segunda foi substituída pela
+                        estrutura mono motor turbo-diesel V8 com 3.600 cm3 de cilindrada.
+                        Também a carroceria independente da suspensão, tornou-se um conjunto monobloco.
+                        De modo geral, motores turbo-diesel são mais econômicos que motores a gasolina, e as novas
+                        tecnologias de injeção eletrônica com CRDI (Common Rail Direct Injection) melhoram o desempenho
+                        de motores a diesel,
+                        que em décadas passadas eram inviáveis na maioria dos automóveis de alto-luxo.
+
+                        Nos dias de hoje...
+
+                        Atualmente, a versão de motorização turbo-diesel com 3.000 cilindradas está disponível no
+                        Brasil, e uma versão do Range Rover com motorização a gasolina.
+
+                        E para completar este sofisticado conjunto, o fabricante tomou o cuidado de introduzir outros
+                        itens complementares de segurança e conforto:
+                        Ar-condicionado e aquecedor,
+                        mini-refrigerador,
+                        CD Player com rádio AM / FM,
+                        vários air-bags espalhados pelo interior do veículo,
+                        bancos com revestimento em couro com regulação elétrica,
+                        detalhes em madeiras nobres nas portas e no painel, entre vários outros.
+                    </p>
                 </div>
-              </div>
-              
-              <div class="container">
-                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                <img id="expandedImg4" style="width:100%">
-                <div id="imgtext4"></div>
-              </div>
+            </section>
 
-              <pre>
-                
-                História
+            <section class="section-cars">
 
-                O Range Rover é um sofisticado utilitário desportivo de alto-luxo fabricado na Inglaterra pela tradicional Land Rover, que foi adquirida em 2008 pela Tata Motors. 
-                Este requintado utilitário desportivo impressiona pelas suas dimensões externas, pelo conforto e pela alta tecnologia embarcada, 
-                que chega ao ponto extremo de oferecer ao seu condutor a opção de escolher uma programação de ajuste da suspensão para rodar com mais suavidade (absorvendo o máximo possível as irregularidades das vias) ou para rodar mais firme, 
-                mais baixa para viajar por autoestradas pavimentadas bem conservadas ou mais alta para dirigir cuidadosamente em estradas rurais.
+                <div class="cars-deteils" style="text-align:center">
+                    <h2>GT-R R35</h2>
+                    <p>
+                        Conheça um dos carros mais alucinantes dos amantes de carros:</p>
+                </div>
 
-                Há mais de 60 anos, a fabricante inglesa Land Rover produz alguns dos mais respeitáveis e robustos utilitários esportivos de tração 4X4 integral do mundo. 
-                Esta tecnologia 4X4 foi mantida e aprimorada no Range Rover, mas desta vez combinada com a introdução do moderno conceito monobloco na carroceria, que absorve melhor impactos em acidentes graves.
-                Por se tratar de um automóvel pesado, na década de 2.000 a Land Rover disponibilizou no Brasil duas opções de motorização diesel aos seus clientes, 
-                a primeira um motor turbo-diesel V6 com 2.700 cm3 de cilindrada, a segunda foi substituída pela estrutura mono motor turbo-diesel V8 com 3.600 cm3 de cilindrada. 
-                Também a carroceria independente da suspensão, tornou-se um conjunto monobloco. 
-                De modo geral, motores turbo-diesel são mais econômicos que motores a gasolina, e as novas tecnologias de injeção eletrônica com CRDI (Common Rail Direct Injection) melhoram o desempenho de motores a diesel, 
-                que em décadas passadas eram inviáveis na maioria dos automóveis de alto-luxo.
+                <!-- The four columns -->
+                <div class="row">
+                    <div class="column">
+                        <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d039a211e_-_2015_nissan_gt-r_5things_side-59815633-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            onclick="r35(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d038d367c_-_2015_nissan_gt-r_5things_rear-75517866-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            onclick="r35(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d0358150c_-_2015_nissan_gt-r_5things_interior-8425885-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            onclick="r35(this);">
+                    </div>
+                    <div class="column">
+                        <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d0339850e_-_2015_nissan_gt-r_5things_engine-69860750-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            onclick="r35(this);">
+                    </div>
+                </div>
 
-                Nos dias de hoje...
-              
-                Atualmente, a versão de motorização turbo-diesel com 3.000 cilindradas está disponível no Brasil, e uma versão do Range Rover com motorização a gasolina.
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg5"class="img-cars">
+                    <div id="imgtext5"></div>
+                </div>
+                <div class="discription-cars">
+                    <p>
 
-                E para completar este sofisticado conjunto, o fabricante tomou o cuidado de introduzir outros itens complementares de segurança e conforto: 
-                Ar-condicionado e aquecedor, 
-                mini-refrigerador, 
-                CD Player com rádio AM / FM, 
-                vários air-bags espalhados pelo interior do veículo, 
-                bancos com revestimento em couro com regulação elétrica, 
-                detalhes em madeiras nobres nas portas e no painel, entre vários outros.
-            </pre>
+                        História
 
-            <div style="text-align:center">
-              <h2>GT-R R35</h2>
-              <p>
-                  Conheça um dos carros mais alucinantes dos amantes de carros:</p>
-            </div>
+                        O Nissan GT-R é um modelo de automóvel superesportivo produzido pela Nissan, foi anunciado em
+                        2001 com o objectivo de dar sequencia a marca GT-R (que surgiu na década de 1960 que fez sucesso
+                        com o Skyline),
+                        em 6 de Dezembro de 2007 foi oficialmente lançado no Japão, em 2008 chegou aos Estados Unidos,
+                        Canadá e Portugal, no resto do mundo apenas em 2009.
+                        O modelo 2007 possui um motor 3.8 V6 Biturbo com potência de 485Cv (362 kW) e 59.95Kgfm
+                        (588,0N.m.) de torque, acoplado a uma transmissão automatizada de 6 marchas com dupla embreagem
+                        e sistema de tração AWD ATTESA E-TS®,
+                        esse conjunto fornece desempenho capaz de levar os 1740Kg de 0–100 km/h em 2.7s e tem velocidade
+                        máxima de 385 à 395 km/h.
+                        O projeto do Nissan GT-R foi coordenado pelo engenheiro japonês Kazutoshi Mizuno, que no início
+                        do projeto já contava com mais de 40 anos de experiencia,
+                        foi engenheiro focado em corridas, diretor de equipe e designer de carros.
+                        Kazutoshi juntamente com toda a equipe queria revolucionar o mercado de supercarros com algo que
+                        suprisse as necessidades dos clientes, para isso o carro precisava passar a marca de 300km/h e
+                        não deveria custar mais de 100 mil dólares.
+                        Para que isso fosse possível a Nissan optou por produzir o supercarro em massa na maior e mais
+                        tecnológica fabrica da Nissan, que fica situada em Tochigi no Japão,
+                        a técnica de montagem exige muito mais precisão por se tratar de um carro incomum, os únicos
+                        componentes montados á mão são o motor e o câmbio que são produzidos em lugares diferentes e
+                        posteriormente montados no GT-R em Tochigi.
+                        O GT-R carrega a cultura japonesa desde seu projeto inicial, seu design foi inspirado nos robôs
+                        Gundam, o carro é oposto aos concorrentes europeus e americanos,
+                        o GT-R tem linhas fortes e robustas sugerindo baixa eficiência aerodinâmica, mas oque acontece é
+                        justamente o contrario,
+                        com um coeficiente aerodinâmico de 0,26 o design GT-R é pensado e produzido para reduzir
+                        arrastos e vórtices ao máximo, além de empurrar o carro para baixo aumentando a aderência e
+                        segurança em altas velocidades.
 
-          <!-- The four columns -->
-          <div class="row">
-              <div class="column">
-                <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d039a211e_-_2015_nissan_gt-r_5things_side-59815633-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"  style="width:100%" onclick="r35(this);">
-              </div>
-              <div class="column">
-                <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d038d367c_-_2015_nissan_gt-r_5things_rear-75517866-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"  style="width:100%" onclick="r35(this);">
-              </div>
-              <div class="column">
-                <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d0358150c_-_2015_nissan_gt-r_5things_interior-8425885-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"  style="width:100%" onclick="r35(this);">
-              </div>
-              <div class="column">
-                <img src="https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/49/1280x720/5474d0339850e_-_2015_nissan_gt-r_5things_engine-69860750-lg.jpg?crop=1xw:1xh;center,top&resize=980:*"  style="width:100%" onclick="r35(this);">
-              </div>
-            </div>
-            
-            <div class="container">
-              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-              <img id="expandedImg5" style="width:100%">
-              <div id="imgtext5"></div>
-            </div>
+                    </p>
+                </div>
 
-            <pre>
-                
-              História
+            </section>
 
-              O Nissan GT-R é um modelo de automóvel superesportivo produzido pela Nissan, foi anunciado em 2001 com o objectivo de dar sequencia a marca GT-R (que surgiu na década de 1960 que fez sucesso com o Skyline), 
-              em 6 de Dezembro de 2007 foi oficialmente lançado no Japão, em 2008 chegou aos Estados Unidos, Canadá e Portugal, no resto do mundo apenas em 2009. 
-              O modelo 2007 possui um motor 3.8 V6 Biturbo com potência de 485Cv (362 kW) e 59.95Kgfm (588,0N.m.) de torque, acoplado a uma transmissão automatizada de 6 marchas com dupla embreagem e sistema de tração AWD ATTESA E-TS®, 
-              esse conjunto fornece desempenho capaz de levar os 1740Kg de 0–100 km/h em 2.7s e tem velocidade máxima de 385 à 395 km/h.
-              O projeto do Nissan GT-R foi coordenado pelo engenheiro japonês Kazutoshi Mizuno, que no início do projeto já contava com mais de 40 anos de experiencia, 
-              foi engenheiro focado em corridas, diretor de equipe e designer de carros. 
-              Kazutoshi juntamente com toda a equipe queria revolucionar o mercado de supercarros com algo que suprisse as necessidades dos clientes, para isso o carro precisava passar a marca de 300km/h e não deveria custar mais de 100 mil dólares. 
-              Para que isso fosse possível a Nissan optou por produzir o supercarro em massa na maior e mais tecnológica fabrica da Nissan, que fica situada em Tochigi no Japão, 
-              a técnica de montagem exige muito mais precisão por se tratar de um carro incomum, os únicos componentes montados á mão são o motor e o câmbio que são produzidos em lugares diferentes e posteriormente montados no GT-R em Tochigi.
-              O GT-R carrega a cultura japonesa desde seu projeto inicial, seu design foi inspirado nos robôs Gundam, o carro é oposto aos concorrentes europeus e americanos, 
-              o GT-R tem linhas fortes e robustas sugerindo baixa eficiência aerodinâmica, mas oque acontece é justamente o contrario, 
-              com um coeficiente aerodinâmico de 0,26 o design GT-R é pensado e produzido para reduzir arrastos e vórtices ao máximo, além de empurrar o carro para baixo aumentando a aderência e segurança em altas velocidades.
+            <section class="table-section">
 
-           </pre>
 
-             <h5> 
-                Tabela Fipe dos veículos:
-            </h5>
-        <div style="background-color: #000000">
+            </section>
+
+
+            <div class="table-container">
+
+                <h1>
+                    Tabela Fipe dos veículos:
+                </h1>
+
                 <table id="grad" class="table">
-                <bordercolor='white'>
+                    <bordercolor='white'>
 
-                    <thead>
-                        
-                        <tr>
-                            <tr:hover {background-color:blue;}>
-                            <th>Carros</th>
-                            <th>Preços</th>
-                        </tr>
-                    <tbody>
-                        <tr>
-                            <td>Jeep Renegade Longitude</td>
-                            <td>R$127.490,00</td>
-                        </tr>
-                        <tr>
-                            <td>Chevrolet Camaro Coupé Esportivo</td>
-                            <td>R$490.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Nissan GT-R R35</td>
-                            <td>R$769.109,00</td>
-                        </tr>
-                        <tr>
-                            <td>Hyundai HB20S Diamond Plus</td>
-                            <td>R$86.090,00</td>
-                        </tr>
-                        <tr>
-                            <td>Honda Civic Type-R </td>
-                            <td>R$157.400,00</td>
-                        </tr>
-                        <tr>
-                            <td>Porsche 911 Turbo S</td>
-                            <td>R$709.000,00</td>
-                        </tr>
-                        <tr>
-                            <td>Dodge RAM 3500</td>
-                            <td>R$509.990,00</td>
-                        </tr>
-                        <tr>
-                            <td>Subaru WRX sti</td>
-                            <td>R$308.900,00</td>
-                        </tr>
-                        <tr>
-                            <td>Supra MKIV</td>
-                            <td>R$810.365,00</td>
-                        </tr>
+                        <thead>
+
+                            <tr>
+                                <tr:hover {background-color:blue;}>
+                                    <th>Carros</th>
+                                    <th>Preços</th>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td>Jeep Renegade Longitude</td>
+                                <td>R$127.490,00</td>
+                            </tr>
+                            <tr>
+                                <td>Chevrolet Camaro Coupé Esportivo</td>
+                                <td>R$490.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Nissan GT-R R35</td>
+                                <td>R$769.109,00</td>
+                            </tr>
+                            <tr>
+                                <td>Hyundai HB20S Diamond Plus</td>
+                                <td>R$86.090,00</td>
+                            </tr>
+                            <tr>
+                                <td>Honda Civic Type-R </td>
+                                <td>R$157.400,00</td>
+                            </tr>
+                            <tr>
+                                <td>Porsche 911 Turbo S</td>
+                                <td>R$709.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Dodge RAM 3500</td>
+                                <td>R$509.990,00</td>
+                            </tr>
+                            <tr>
+                                <td>Subaru WRX sti</td>
+                                <td>R$308.900,00</td>
+                            </tr>
+                            <tr>
+                                <td>Supra MKIV</td>
+                                <td>R$810.365,00</td>
+                            </tr>
                             <td>Land Rover Range Rover Velar</td>
                             <td>R$594.950,00</td>
-                        </tr:hover>
-                        </tr>
+                            </tr:hover>
+                            </tr>
 
-                    </tbody>                 
-                </bordercolor> 
+                        </tbody>
+                        </bordercolor>
 
-            </table>
+                </table>
             </div>
 
-            <h6>
+            <h6 style="margin-top:20px;">
                 Integraçao com nosso app:
             </h6>
 
-            <pre>
-Temos como principal objetivo integrar nosso site com nosso aplicativo movel para postar nossas novidades relacionadas ao 
-desenvolvimento do aplicativo como tambem deixar nossos clientes sempre atualizados sobre o trabalho que estamos desenvolvendo.
-caso queira conhecer nosso prototipo de aplicativo movel clique aqui: <a href="https://www.google.com/intl/pt-PT/gmail/about/">nbgmotors@gmail.com</a>
-            </pre>
+           
         </div>
-    </body>
+
+
+    </main>
+    <footer>
+        <p>
+            Temos como principal objetivo integrar nosso site com nosso aplicativo movel para postar nossas
+            novidades relacionadas ao
+            desenvolvimento do aplicativo como tambem deixar nossos clientes sempre atualizados sobre o trabalho que
+            estamos desenvolvendo.
+            caso queira conhecer nosso prototipo de aplicativo movel clique aqui: <a
+                href="https://www.google.com/intl/pt-PT/gmail/about/">nbgmotors@gmail.com</a>
+        </p>
+
+    </footer>
+
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
