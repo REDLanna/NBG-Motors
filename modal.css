@@ -1,0 +1,43 @@
+
+
+
+
+
+  /* Clear floats after the columns */
+
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .container .img-cars{
+    width: 100%;
+  }
+  
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+  
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: -16px;
+    right: 5px;
+    color: red;
+    font-size: 35px;
+    cursor: pointer;
+  }
+    
