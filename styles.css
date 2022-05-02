@@ -30,8 +30,8 @@ body{
 .header-container nav ul li a{
   font: 500 16px;
   color: #ffffff;
-  
-  
+
+
   text-decoration: none;
 
 }
@@ -100,7 +100,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-  
+    justify-content: center;
 }
 
 .row:after {
@@ -108,14 +108,14 @@ body{
     display: table;
     clear: both;
   }
-  
+
 
 .column {
     padding:10px;
 
 }   
-  
-  
+
+
   /* Style the images inside the grid */
   .column img {
     width: 290px;
@@ -125,11 +125,11 @@ body{
     cursor: pointer; 
     transition: all .2s linear;
   }
-  
+
   .column img:hover {
     opacity: 1;
   }
-  
+
 .discription-cars{
     background-color: #f1f1f1;
     color: #111111;
@@ -148,7 +148,7 @@ body{
 
 }
 .table-container{
-    
+
     width: 100%;
 }
 
@@ -163,7 +163,7 @@ body{
     width: 90%;
     margin: 0 auto;
   }
-  
+
   .table-container    table  th, td {
                   padding: 10px;
                   text-align: left;
@@ -171,7 +171,7 @@ body{
               }
           .table-container     tr:hover {opacity: 0.8;
               cursor: pointer;}
-             
+
               .table-container     table  ul {
                    list-style-type: none;
                    margin: 0;
@@ -179,11 +179,11 @@ body{
                    overflow: hidden;
                    background-color: #f1f1f1;
               }
-  
+
               .table-container     table  li {
                    float: left;
               }
-  
+
               .table-container    table  li a {
                    display: block;
                    color: #f3f3f3;
@@ -191,22 +191,22 @@ body{
                    padding: 14px 16px;
                    text-decoration: none;
               }
-  
+
               .table-container       table li a:hover {
                    background-color: #111;
               }   
               .table-container       #grad{
-                  
+
                   background-color: #111;
               }
               .table-container   td,th,thead,table,tbody{
                   color:#f3f3f3;
                   border: 1px solid gray;
               }
-              
+
               .table-container  #grad1{
                   background-color:#ffffff;
-                  
+
               }
 
 
@@ -218,5 +218,5 @@ body{
     footer p {
         margin: 0 auto;
         max-width: 1200px;
-        font-size: 12px;
+        font-size: 20px;
     }
