@@ -37,3 +37,35 @@ function jeep(imgs) {
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
   }
+
+  function dodgeram(imgs) {
+    var expandImg = document.getElementById("expandedImg6");
+    var imgText = document.getElementById("imgtext6");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function porsche(imgs) {
+    var expandImg = document.getElementById("expandedImg7");
+    var imgText = document.getElementById("imgtext7");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function subaru(imgs) {
+    var expandImg = document.getElementById("expandedImg8");
+    var imgText = document.getElementById("imgtext8");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function civic(imgs) {
+    var expandImg = document.getElementById("expandedImg9");
+    var imgText = document.getElementById("imgtext9");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
