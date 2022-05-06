@@ -1,24 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Home - NBG Motors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.header-container{
+  background-color: #081E37;
+  width: 100%;
+
+}
+.header-container nav {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-container nav ul li {
+    list-style: none;
+    padding: 14px 16px;
+
+}
+.header-container nav ul li:hover {
+    background-color: #3e3e3e;
+
+}
+.header-container nav ul li a{
+  font: 500 16px;
+  color: #ffffff;
+
+
+  text-decoration: none;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#videozada {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
 </head>
 <body>
-    <div class="banner">
-        <video autoplay muted loop>
-            <source src="ngb.mp4" type="video/mp4">
-    
-        </video>
-        <h1>Video em Background</h1>
-        <div class="content">
-            
-            <p>Be a fast, and furious, go to New Bridge Motors.</p>
-            <a href="https://www.instagram.com"><img src="insta.png.png" alt="Instagram"></a>
-            <a href="#"><img src="wpp.png.png" alt="WhatsApp"></a>
+
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="nbg2.html">Home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Notícias</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Marcas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+            </nav>
+
+
         </div>
-    </div>
+    </header>
+
+
+<video autoplay muted loop id="videozada">
+  <source src="ngb.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Boas-vindas, NewBridgers!</h1>
+  <p>Conheça o nosso catálogo que engloba os carros mais queridos de todo o mundo! E com o preço PARA todo mundo!</p>
+  <button id="myBtn" onclick="videobackground()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("videozada");
+var btn = document.getElementById("myBtn");
+
+function videobackground() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
 </body>
 </html>
